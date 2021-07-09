@@ -7,6 +7,8 @@ global with sharing class DreamHouseSampleDataController {
         
         for(Integer i = 0; i<20; i++){
             List<Account> accList = [SELECT Id, Name FROM Account];
+            accList[0].Name = 'adasdsda';
+            update accList;
         }
     }    
 }
